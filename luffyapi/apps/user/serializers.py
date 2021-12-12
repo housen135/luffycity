@@ -46,7 +46,7 @@ class LoginModelSerializer(serializers.ModelSerializer):
 
 class LoginMobileSerializer(serializers.ModelSerializer):
     mobile = serializers.CharField(
-        write_only=True, min_length=11, max_length=11)
+         min_length=11, max_length=11)
     code = serializers.CharField(write_only=True, min_length=3, max_length=3)
 
     class Meta:

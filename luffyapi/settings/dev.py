@@ -30,9 +30,7 @@ SECRET_KEY = '+10fe%^ykb5!563*_f4co=6hvpo%qv$!b+ht9_l)sj93i7p_+y'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '120.55.63.84',
-]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -201,7 +199,7 @@ LOGGING = {
 REST_FRAMEWORK = {
     'EXCEPTION_HANDLER': 'utils.exception.exception_handler',
     'DEFAULT_THROTTLE_RATES':{
-        'sms_throttle':'1/hour',
+        'sms_throttle':'1/m',
     }
 
 }

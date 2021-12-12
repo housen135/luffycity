@@ -38,17 +38,17 @@ class Order(BaseModel):
         verbose_name = "订单记录"
         verbose_name_plural = "订单记录"
 
-    @property
-    def courses(self):
-        data_list=[]
-        for item in self.order_courses.all():
-            print('order_model_course---->',item)
-            data_list.append({
-                'id':item.id,
-                'course_name':item.course.name,
-                'real_price':item.real_price,
-            })
-        return data_list
+    # @property
+    # def courses(self):
+    #     data_list=[]
+    #     for item in self.order_courses.all():
+    #         print('order_model_course---->',item)
+    #         data_list.append({
+    #             'id':item.id,
+    #             'course_name':item.course.name,
+    #             'real_price':item.real_price,
+    #         })
+    #     return data_list
 
     def __str__(self):
         return "%s - ￥%s" % (self.subject, self.total_amount)

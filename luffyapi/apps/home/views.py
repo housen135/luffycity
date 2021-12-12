@@ -14,6 +14,7 @@ class BannerListAPIView(ListAPIView):
 
     def get(self,request,*args,**kwargs):
         banner_list = cache.get('banner_list')
+        # print('banner_list=====<',banner_list)
         if not banner_list:
             print('走数据库了')
             response = self.list(request,*args,**kwargs)
@@ -21,7 +22,5 @@ class BannerListAPIView(ListAPIView):
             cache.set('banner_list',response.data)
             return response
         return Response(banner_list)
-
-    pass
 # Create your views here.
  

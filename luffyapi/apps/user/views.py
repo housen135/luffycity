@@ -13,7 +13,7 @@ from . import models
 
 import re
 
-
+#普通登录接口
 class LoginAPIView(APIView):
     authentication_classes = []
     permission_classes = []
@@ -29,6 +29,7 @@ class LoginAPIView(APIView):
         print('LoginAPIview--->',serializer.errors)
         return APIResponse(1, 'failed', data=serializer.errors, http_status=400)
 
+#验证码接口
 from . import throttles
 class SMSAPIView(APIView):
     throttle_classes = [throttles.SMSThrottle]
@@ -46,7 +47,7 @@ class SMSAPIView(APIView):
         cache.set(settings.SMS_CACHE_KEY % mobile, code, settings.SMS_EXP)
         return APIResponse(data_status=0,data_msg='短信发送成功')
 
-
+#短信登录接口
 class LoginMobileAPIView(APIView):
     authentication_classes = []
     permission_classes = []
@@ -62,7 +63,7 @@ class LoginMobileAPIView(APIView):
         return APIResponse(1,data_msg='登陆失败LoginMobile',data=serializer.errors,http_status=200)
 
 
-
+# 校验手机接口
 class MobileAPIView(APIView):
     authentication_classes=[]
     permission_classes=[]
@@ -80,6 +81,8 @@ class MobileAPIView(APIView):
         except Exception as e:
             return APIResponse(0,'手机未注册') # 报错反而是对的
 
+            
+#注册接口
 class RegisterAPIView(APIView):
     authentication_classes=[]
     permission_classes = []

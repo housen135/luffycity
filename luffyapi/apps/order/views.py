@@ -28,6 +28,7 @@ class SuccessAPIView(APIView):
         if result:
             models.Order.objects.filter(out_trade_no = data.get('out_trade_no')).update(order_status = 1)
         return Response('success')
+        
     def post(self, request, *args, **kwargs):
         data = request.data.dict()  # 回调参数，是QueryDict类型，不能直接调用pop方法
         sign = data.pop('sign')  # 签名

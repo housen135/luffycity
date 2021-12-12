@@ -2,6 +2,9 @@
 
 ```python 
 python install -r packages.txt
+
+
+XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
 ##数据库配置 
 ```
@@ -22,12 +25,12 @@ INSERT INTO `luffy_course_chapter` VALUES (2, 0, 1, '2019-07-14 13:58:48.051543'
 INSERT INTO `luffy_course_chapter` VALUES (3, 0, 1, '2019-07-14 13:59:09.878183', '2019-07-14 14:01:40.048608', 1, '项目创建', '', '2019-07-14', 3, 2);
 INSERT INTO `luffy_course_chapter` VALUES (4, 0, 1, '2019-07-14 13:59:37.448626', '2019-07-14 14:01:58.709652', 1, 'Linux环境创建', '', '2019-07-14', 4, 3);
 
-INSERT INTO `luffy_course_section` VALUES (1, 0, 1, '2019-07-14 14:02:33.779098', '2019-07-14 14:02:33.779135', '计算机原理上', 1, 2, NULL, NULL, '2019-07-14 14:02:33.779193', 1, 1);
-INSERT INTO `luffy_course_section` VALUES (2, 0, 1, '2019-07-14 14:02:56.657134', '2019-07-14 14:02:56.657173', '计算机原理下', 2, 2, NULL, NULL, '2019-07-14 14:02:56.657227', 1, 1);
-INSERT INTO `luffy_course_section` VALUES (3, 0, 1, '2019-07-14 14:03:20.493324', '2019-07-14 14:03:52.329394', '环境搭建上', 1, 2, NULL, NULL, '2019-07-14 14:03:20.493420', 0, 2);
-INSERT INTO `luffy_course_section` VALUES (4, 0, 1, '2019-07-14 14:03:36.472742', '2019-07-14 14:03:36.472779', '环境搭建下', 2, 2, NULL, NULL, '2019-07-14 14:03:36.472831', 0, 2);
-INSERT INTO `luffy_course_section` VALUES (5, 0, 1, '2019-07-14 14:04:19.338153', '2019-07-14 14:04:19.338192', 'web项目的创建', 1, 2, NULL, NULL, '2019-07-14 14:04:19.338252', 1, 3);
-INSERT INTO `luffy_course_section` VALUES (6, 0, 1, '2019-07-14 14:04:52.895855', '2019-07-14 14:04:52.895890', 'Linux的环境搭建', 1, 2, NULL, NULL, '2019-07-14 14:04:52.895942', 1, 4);
+INSERT INTO `luffy_course_Section` VALUES (1, 0, 1, '2019-07-14 14:02:33.779098', '2019-07-14 14:02:33.779135', '计算机原理上', 1, 2, NULL, NULL, '2019-07-14 14:02:33.779193', 1, 1);
+INSERT INTO `luffy_course_Section` VALUES (2, 0, 1, '2019-07-14 14:02:56.657134', '2019-07-14 14:02:56.657173', '计算机原理下', 2, 2, NULL, NULL, '2019-07-14 14:02:56.657227', 1, 1);
+INSERT INTO `luffy_course_Section` VALUES (3, 0, 1, '2019-07-14 14:03:20.493324', '2019-07-14 14:03:52.329394', '环境搭建上', 1, 2, NULL, NULL, '2019-07-14 14:03:20.493420', 0, 2);
+INSERT INTO `luffy_course_Section` VALUES (4, 0, 1, '2019-07-14 14:03:36.472742', '2019-07-14 14:03:36.472779', '环境搭建下', 2, 2, NULL, NULL, '2019-07-14 14:03:36.472831', 0, 2);
+INSERT INTO `luffy_course_Section` VALUES (5, 0, 1, '2019-07-14 14:04:19.338153', '2019-07-14 14:04:19.338192', 'web项目的创建', 1, 2, NULL, NULL, '2019-07-14 14:04:19.338252', 1, 3);
+INSERT INTO `luffy_course_Section` VALUES (6, 0, 1, '2019-07-14 14:04:52.895855', '2019-07-14 14:04:52.895890', 'Linux的环境搭建', 1, 2, NULL, NULL, '2019-07-14 14:04:52.895942', 1, 4);
 
 INSERT INTO `luffy_banner` VALUES (1, 0, 1, '2021-10-02 21:21:16.534223', '2021-10-02 21:21:16.534223', 'banner1', '/free', 'banner/banner1.png', 'banner1 banner1', 4);
 INSERT INTO `luffy_banner` VALUES (2, 0, 1, '2021-10-02 21:21:44.086082', '2021-10-02 21:21:44.086082', 'banner2', '/course', 'banner/banner2.png', 'banner2 banner2 banner2', 3);
@@ -42,3 +45,5 @@ INSERT INTO `luffy_banner` VALUES (4, 0, 1, '2021-10-02 21:23:39.663072', '2021-
 
 
 
+
+```

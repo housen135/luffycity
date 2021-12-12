@@ -11,6 +11,9 @@ from rest_framework.exceptions import ValidationError
 from libs.ipay import alipay,alipay_gateway
 from course.models import Course
 import time
+
+
+
 class OrderModelSerializer(serializers.ModelSerializer):
     # 商品的主键们：暂定 '1,2,3' 方式传多个主键
     goods_pks = serializers.CharField(max_length=64)
